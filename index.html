@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Ajhelina 💜</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(ellipse at top, #48216b, transparent 60%),
+    linear-gradient(160deg, #10051d, #230c3d, #10051d);
+  color: #fff;
+  font-family: Georgia, serif;
+  text-align: center;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  width: 100%;
+  max-width: 430px;
+  padding: 32px 23px;
+  border: 1px solid #d9a5ff66;
+  border-radius: 28px;
+  background: #ffffff0d;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 50px #a43bff20;
+  animation: aparecer 1.5s ease;
+}
+
+.top {
+  color: #e5b9ff;
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(35px, 10vw, 49px);
+  margin: 20px 0 10px;
+  color: #f2d8ff;
+  text-shadow: 0 0 22px #c66bff99;
+}
+
+.subtitle {
+  color: #e0c4ef;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.flower {
+  font-size: 75px;
+  margin: 22px 0;
+  display: inline-block;
+  animation: flotar 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 18px #c87cff);
+}
+
+.heart {
+  font-size: 45px;
+  margin: 12px 0;
+  animation: latir 1.5s infinite;
+  filter: drop-shadow(0 0 14px #ed75ff);
+}
+
+.divider {
+  width: 100px;
+  height: 1px;
+  margin: 24px auto;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #e3a6ff,
+    transparent
+  );
+}
+
+button {
+  width: 100%;
+  padding: 16px 12px;
+  margin-top: 16px;
+  border: 1px solid #e5b9ff;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #a84dce, #6d28a5);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 25px #b34eff35;
+  transition: transform .3s, box-shadow .3s;
+}
+
+button:active {
+  transform: scale(.96);
+}
+
+button:hover {
+  box-shadow: 0 0 30px #cf7cff88;
+}
+
+#carta {
+  display: none;
+  margin-top: 25px;
+  text-align: left;
+  line-height: 1.9;
+  color: #f4e8ff;
+  font-size: 16px;
+  animation: aparecer 1s ease;
+}
+
+#carta.visible {
+  display: block;
+}
+
+.firma {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 22px;
+  color: #e9baff;
+}
+
+.footer {
+  color: #c5a3d9;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+.flor-flotante {
+  position: fixed;
+  top: -50px;
+  z-index: 1;
+  pointer-events: none;
+  animation: caer linear forwards;
+  opacity: .8;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-12px) rotate(5deg); }
+}
+
+@keyframes latir {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.16); }
+}
+
+@keyframes caer {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <main class="card">
+
+    <div class="top">Un detalle para alguien especial</div>
+
+    <div class="flower">🪻</div>
+
+    <h1>Ajhelina</h1>
+
+    <p class="subtitle">
+      Para la chica que tiene un lugar
+      muy especial en mi corazón. 💜
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="heart">💜</div>
+
+    <p class="subtitle">
+      Hay flores bonitas en el mundo,
+      pero ninguna dedicatoria estaría
+      completa sin pensar en ti.
+    </p>
+
+    <button onclick="abrirCarta()">
+      💌 Abrir tu cartita especial
+    </button>
+
+    <section id="carta">
+      <p>Mi querida Ajhelina: 💜</p>
+
+      <br>
+
+      <p>
+        Hoy quiero dedicarte algo tan bonito
+        como las flores moradas que tanto te gustan.
+        🪻💐
+      </p>
+
+      <br>
+
+      <p>
+        Si pudiera llenar tu habitación de flores,
+        lo haría. Si pudiera regalarte un jardín
+        entero, elegiría las flores más hermosas,
+        porque quería que cada una te recordara
+        lo especial que eres para mí.
+      </p>
+
+      <br>
+
+      <p>
+        A veces, las palabras no alcanzan para
+        expresar todo el cariño que una persona
+        puede despertar. Pero hoy quiero que sepas
+        que me encanta poder compartir momentos
+        contigo y tener razones para sonreír
+        cuando pienso en ti. ✨
+      </p>
+
+      <br>
+
+      <p>
+        Que nunca te falten motivos para sonreír,
+        sueños que cumplir y flores moradas
+        que iluminen tus días.
+      </p>
+
+      <br>
+
+      <p>
+        Y si algún día recibes flores moradas,
+        recuerda que detrás de ellas hay un
+        pequeño mensaje que dice:
+        <strong>eres alguien muy especial. 💜</strong>
+      </p>
+
+      <div class="firma">
+        Con mucho cariño, para ti. 💜🪻
+      </div>
+
+      <button onclick="enviarWhatsApp()">
+        💌 Enviarte esta dedicatoria
+      </button>
+    </section>
+
+    <div class="footer">
+      Hecho con cariño especialmente para Ajhelina ✨
+    </div>
+
+  </main>
+</div>
+
+<script>
+function abrirCarta() {
+  document.getElementById("carta").classList.add("visible");
+  crearFlores(18);
+}
+
+function crearFlores(cantidad) {
+  const flores = ["🪻", "💜", "✨", "🌸"];
+
+  for (let i = 0; i < cantidad; i++) {
+    setTimeout(() => {
+      const flor = document.createElement("div");
+      flor.className = "flor-flotante";
+      flor.textContent =
+        flores[Math.floor(Math.random() * flores.length)];
+
+      flor.style.left = Math.random() * 100 + "vw";
+      flor.style.fontSize = (15 + Math.random() * 20) + "px";
+      flor.style.animationDuration = (4 + Math.random() * 5) + "s";
+
+      document.body.appendChild(flor);
+
+      setTimeout(() => flor.remove(), 10000);
+    }, i * 160);
+  }
+}
+
+function enviarWhatsApp() {
+  const mensaje =
+`💜🪻 Para ti, mi querida Ajhelina 🪻💜
+
+Quería dedicarte estas palabras porque sé cuánto te gustan las flores moradas.
+
+Si pudiera regalarte un jardín entero, lo llenaría de tus flores favoritas, porque mereces cosas bonitas y muchos motivos para sonreír. 💐✨
+
+Me encanta poder compartir momentos contigo y quiero que recuerdes lo especial que eres para mí.
+
+Que nunca te falten flores, sonrisas y momentos bonitos.
+
+Con mucho cariño, para ti, Ajhelina. 💜🌷`;
+
+  const url = "https://wa.me/?text=" +
+    encodeURIComponent(mensaje);
+
+  window.location.href = url;
+}
+
+setTimeout(() => crearFlores(12), 700);
+</script>
+
+</body>
+</html>
